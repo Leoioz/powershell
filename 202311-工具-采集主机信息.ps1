@@ -88,6 +88,3 @@ $relativePath = ".\电脑信息.txt"
 $endpath = "$desktop$relativePath"
 $endfile | Out-File -FilePath $endpath
 Start-Process "$desktop$relativePath"
-
-#$filePath = Join-Path $desktop $relativePath  
-#Add-Content -Path $filePath -Value $endfile
