@@ -44,6 +44,6 @@ $sourceFolder = "C:\Users\HNCJ-liaobingzhi\Desktop\zkecodatabak"
 #指定转移目录
 $destinationFolder = "C:\Users\HNCJ-liaobingzhi\Desktop\allbak"  
 #通过文件名+查找目录找到文件
-$file = Get-ChildItem -Path $sourceFolder -Filter $file_name -Recurse -Force -ErrorAction SilentlyContinue
+$file = Get-ChildItem -Path $sourceFolder -Filter $file_name -Recurse -Force -ErrorAction SilentlyContinue 
 #如果找到文件，则转移至备份目录
 if ($null -ne $file) {Copy-Item -Path $file.FullName -Destination $destinationFolder}
